@@ -6,5 +6,7 @@ public class Person {
    int age;
    String IDNumber;
    Address personAddress;
+   Phone phoneNumber;
+
 
 }
