@@ -14,7 +14,7 @@ public class PersonExample {
 
         System.out.println("Object after assigning some values");
         System.out.println("Triin.name is " + Triin.name);
-        System.out.println("Info for this person: " + Triin.name + Triin.surname + Triin.age);
+        System.out.println("Full info for this person: " + Triin.name + Triin.surname + Triin.age);
         System.out.println("Triin.address is " + Triin.personAddress);
 
 
@@ -40,6 +40,9 @@ public class PersonExample {
         Phone katariinaSuurPhone = new Phone();
         katariinaSuurPhone.countryCode = "+372";
         personWithAllFields.phoneNumber = katariinaSuurPhone;
+        Person withConstructor = new Person(
+                "Katariina","Suur", 35, "ad6254766", katariinaSuurAddress,
+                katariinaSuurPhone);
 
 
     }
