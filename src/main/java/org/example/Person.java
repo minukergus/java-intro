@@ -1,27 +1,40 @@
 package org.example;
-
 public class Person {
-   public Person(String name, String surname, int age, String IDNumber, Address personAddress, Phone phoneNumber) {
-      this.name = name;
-      this.surname = surname;
-      this.age = age;
-      this.IDNumber = IDNumber;
-      this.personAddress = personAddress;
-      this.phoneNumber = phoneNumber;
-   }
-   // default constructor - has no arguments
-   // it can funcion like a method
-   // no return type
-   // named like a class
-   public Person() {
-   }
+    String name;
+    String surname;
+    int age;
 
-   String name;
-   String surname;
-   int age;
-   String IDNumber;
-   Address personAddress;
-   Phone phoneNumber;
+    int height;
+    Address personAddress;
+    Phone phoneNumber;
+    public Person(String name, String surname, int age, Address personAddress, Phone phoneNumber) {
+        this.name = name;
+        this.surname = surname;
+        this.age = age;
+        this.personAddress = personAddress;
+        this.phoneNumber = phoneNumber;
+    }
+    public Person(String name, String surname, int age) {
+        this.name = name;
+        this.surname = surname;
+        this.age = age;
+    }
+    // default constructor - no arguments
+    // it's like a function/method
+    // no return type
+    // named like a class
+    public Person() {
+    }
 
-
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", age=" + age +
+                ", height=" + height +
+                ", personAddress=" + personAddress +
+                ", phoneNumber=" + phoneNumber +
+                '}';
+    }
 }
